@@ -12,3 +12,19 @@
 #      etc.
 
 # Hint: The next number is found by adding the two numbers before it
+
+x = 1
+y = 1
+
+for n in range(0, 50):
+    if n == 0:
+        x = 0
+        print(f"term: {n} / number {x}")
+    elif n == 1:
+        y = 1
+        print(f"term: {n} / number {y}")
+    else:
+        z = x + y
+        print(f"term: {n} / number {z}")
+        x = y
+        y = z
